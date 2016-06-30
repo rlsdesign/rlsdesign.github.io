@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html >
+  <head>
+    <meta charset="UTF-8">
+    <title>A Pen by  Brian</title>
+
+
+
+    <link rel='stylesheet prefetch' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css'>
+
+
+
+
+
+  </head>
+
+  <body>
+
+    <div class="container">
+  <div class="rl-widget">
+    <div class="rl-headline rl-primary">
+      <h1 class="rl-headline-title">
+				Search by Town & Price
+			</h1>
+    </div>
+  </div>
+  <div class="rl-search">
+    <div class="form-group">
+      
+
+      <div class="">
+        <label for="fld-towns" class="control-label">
+  				City or Town
+  			</label>
+        <input type="text" name="fld-listingids" id="fld-listingids" placeholder="Start typing a city or town" class="form-control search" value="" />
+
+      </div>
+
+
+
+        <div class="rl-search-near">
+        </div>
+      </div>
+    </div>
+    <div class="form-group">
+      <label class="control-label">
+				Price
+			</label>
+      <div class="row">
+        <div class="col-xs-12 col-sm-6">
+          <div class="input-group">
+            <span class="input-group-addon">$</span>
+            <input id="fld-min-price" name="fld-min-price" type="text" placeholder="Min Price" value="0" class="form-control search" />
+          </div>
+        </div>
+        <div class="col-xs-12 col-sm-6">
+          <div class="input-group">
+            <span class="input-group-addon">$</span>
+            <input id="fld-max-price" name="fld-max-price" type="text" placeholder="Max Price" value="0" class="form-control search" />
+          </div>
+        </div>
+
+      </div>
+    </div>
+    <div class="form-group">
+      <label class="control-label">
+        Property Type
+      </label>
+
+        <div class="row">
+          <div class="col-lg-3 col-md-4 col-xs-6">
+            <label class="checkbox-inline">
+              <input type="checkbox" name="SF" value="SF" class="rl-pttypes" />
+                Single-Family
+            </label>
+          </div>
+          <div class="col-lg-3 col-md-4 col-xs-6">
+            <label class="checkbox-inline">
+              <input type="checkbox" name="SF" value="SF" class="rl-pttypes" />
+                Single-Family
+            </label>
+          </div>
+          <div class="col-lg-3 col-md-4 col-xs-6">
+            <label class="checkbox-inline">
+              <input type="checkbox" name="SF" value="SF" class="rl-pttypes" />
+                Single-Family
+            </label>
+          </div>
+          <div class="col-lg-3 col-md-4 col-xs-6">
+            <label class="checkbox-inline">
+              <input type="checkbox" name="SF" value="SF" class="rl-pttypes" />
+                Single-Family
+            </label>
+          </div>
+          <div class="col-lg-3 col-md-4 col-xs-6">
+            <label class="checkbox-inline">
+              <input type="checkbox" name="SF" value="SF" class="rl-pttypes" />
+                Single-Family
+            </label>
+          </div>
+          <div class="col-lg-3 col-md-4 col-xs-6">
+            <label class="checkbox-inline">
+              <input type="checkbox" name="SF" value="SF" class="rl-pttypes" />
+                Single-Family
+            </label>
+          </div>
+          <div class="col-lg-3 col-md-4 col-xs-6">
+            <label class="checkbox-inline">
+              <input type="checkbox" name="SF" value="SF" class="rl-pttypes" />
+                Single-Family
+            </label>
+          </div>
+          <div class="col-lg-3 col-md-4 col-xs-6">
+            <label class="checkbox-inline">
+              <input type="checkbox" name="SF" value="SF" class="rl-pttypes" />
+                Single-Family
+            </label>
+          </div>
+
+
+
+
+
+        </div>
+      </div>
+
+
+
+    <div class="rl-searchmore">
+
+      <div class="row">
+        <div class="col-xs-12 col-sm-2 col-md-3">
+          <div class="form-group">
+            <label class="control-label">
+							Min Beds
+						</label>
+            <select id="fld-beds" name="fld-beds" placeholder="Min Beds" class="form-control search">
+
+							<option value="">
+								No Pref
+							</option>
+										<option value="1">1</option>
+										<option value="2">2</option>
+										<option value="3">3</option>
+										<option value="4">4</option>
+
+						</select>
+          </div>
+        </div>
+        <div class="col-xs-12 col-sm-2 col-md-3">
+          <div class="form-group">
+            <label class="control-label">
+							Min Baths
+						</label>
+            <select id="fld-baths" name="fld-baths" placeholder="Min Baths" class="form-control search">
+
+							<option value="">
+								No Pref
+							</option>
+										<option value="1">1</option>
+										<option value="1.5">1.5</option>
+										<option value="2">2</option>
+										<option value="2.5">2.5</option>
+										<option value="3">3</option>
+										<option value="3.5">3.5</option>
+										<option value="4">4</option>
+
+						</select>
+          </div>
+        </div>
+        <div class="col-xs-12 col-sm-8 col-md-6">
+          <label for="fld-keywords" class="control-label">
+  					Keywords
+  				</label>
+          <input id="fld-keywords" name="fld-keywords" type="text" placeholder="Keywords ie Farm, Handyman" class="form-control search" value="" />
+          <span class="help-block">separated by a comma</span>
+        </div>
+      </div>
+
+
+
+      <div class="form-group">
+        <div class="row">
+          <div class="col-xs-12 col-sm-6">
+            <label for="fld-addresses" class="control-label">
+    					Addresses
+    				</label>
+            <input id="fld-addresses" name="fld-addresses" type="text" placeholder="Street name ie Maple, Main, Washington, Rolling Ridge" class="form-control search" value="" />
+            <span class="help-block">separated by a comma</span>
+          </div>
+
+          <div class="col-xs-12 col-sm-6">
+            <label class="control-label" for="fld-listingids">
+    					MLS Number
+    				</label>
+            <input type="text" name="fld-listingids" id="fld-listingids" placeholder="MLS #" class="form-control search" value="" />
+            <span class="help-block">
+    					separated by a comma
+    				</span>
+          </div>
+
+
+        </div>
+      </div>
+
+
+
+      <div class="form-group">
+        <label class="control-label">
+          Other
+        </label>
+
+          <div class="row">
+            <div class="col-lg-3 col-md-4 col-xs-6">
+              <label class="checkbox-inline">
+                <input type="checkbox" name="SF" value="SF" class="rl-pttypes" />
+                  Single-Family
+              </label>
+            </div>
+            <div class="col-lg-3 col-md-4 col-xs-6">
+              <label class="checkbox-inline">
+                <input type="checkbox" name="SF" value="SF" class="rl-pttypes" />
+                  Single-Family
+              </label>
+            </div>
+            <div class="col-lg-3 col-md-4 col-xs-6">
+              <label class="checkbox-inline">
+                <input type="checkbox" name="SF" value="SF" class="rl-pttypes" />
+                  Single-Family
+              </label>
+            </div>
+            <div class="col-lg-3 col-md-4 col-xs-6">
+              <label class="checkbox-inline">
+                <input type="checkbox" name="SF" value="SF" class="rl-pttypes" />
+                  Single-Family
+              </label>
+            </div>
+            <div class="col-lg-3 col-md-4 col-xs-6">
+              <label class="checkbox-inline">
+                <input type="checkbox" name="SF" value="SF" class="rl-pttypes" />
+                  Single-Family
+              </label>
+            </div>
+            <div class="col-lg-3 col-md-4 col-xs-6">
+              <label class="checkbox-inline">
+                <input type="checkbox" name="SF" value="SF" class="rl-pttypes" />
+                  Single-Family
+              </label>
+            </div>
+
+
+
+
+
+
+          </div>
+
+
+
+
+      </div>
+    </div>
+  </div>
+  <div class="rl-searchmore">
+
+    <div class="rl-search">
+      <div class="form-group">
+
+      </div>
+    </div>
+  </div>
+
+
+</div>
+</div>
+
+
+
+
+<style>
+.checkbox-inline+.checkbox-inline, .radio-inline+.radio-inline {
+    margin-top: 0;
+    margin-left: 0px;
+}
+.form-control:focus {
+    box-shadow: inset 0 1px 1px #030,0 0 8px #030;
+  }
+
+
+
+</style>
+  </body>
+</html>
