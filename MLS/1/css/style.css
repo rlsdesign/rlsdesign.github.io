@@ -1,0 +1,32 @@
+body {margin-top: 15px;margin-bottom: 15px;}
+
+#panelOutline .panel-heading {text-align:center;}
+#panelOutline .panel-heading a{text-decoration: none;color: #666;font-weight: bold;font-size: 16px;transition: all 0.2s ;}
+#panelOutline .panel-heading a.active{color: #c3c0ac;font-size: 18px;}
+#panelOutline .panel-heading hr{margin-top: 10px;margin-bottom: 5px;}
+#panelOutline input:focus {box-shadow: none;border-color: #ccc;}
+#panelOutline{background-color: white;border: 1px solid black;border-radius: 1px;background-color: #fbfbfb;}
+
+
+
+.btn {font-size: 14px;text-transform: uppercase;text-decoration: none;padding: 15px 45px;margin: 0;border: none;border-radius: 0px;}
+.btn-success {background: #5BB75B;}
+.btn-success:hover {background: #7ec77e;}
+
+.checkBox {margin: 0;padding: 0;list-style-type: none;}
+.checkBox li {margin-bottom: 15px;padding-left: 25px;}
+.checkBox li::before {content: "\f00c";font-family: FontAwesome;color: black;font-weight: bold;padding: 2px 8px;position: absolute;left: 10px;}
+.mobileShow{display:none;}
+.width100{width:100%;}
+
+#tanBox{background-color:#c3c0ac;padding:5px;}
+.form-control{border-radius: 0px;}
+.center{display:block;margin: 0 auto;}
+.margin{margin-top:25px;margin-bottom: 25px;}
+h5{line-height: 1.5;}
+
+@media (max-width: 768px) {
+  .mobileHide{display:none;}
+  .mobileShow{display:block;}
+  .mobileCenter{text-align: center;}
+}
