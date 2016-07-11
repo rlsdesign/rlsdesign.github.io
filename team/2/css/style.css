@@ -3,8 +3,7 @@
 
 .innerContainer:before {content: "";display: block;padding-top: 100%;}
 
-.innerContainer:hover {z-index: 1;box-shadow: 0 8px 50px rgba(0, 0, 0, 0.2);
-transform: scale(1.01);transition: box-shadow 0.2s ease, transform 0.2s ease, z-index 0s 0s ease;}
+.innerContainer:hover {z-index: 1;box-shadow: 0 0px 26px rgba(0, 0, 0, 0.2);transform: scale(1.00005);transition: box-shadow 0.2s ease, transform 0.3s ease, z-index 0s 0s ease;}
 
 
 .innerContainer .split {opacity: 1;}
