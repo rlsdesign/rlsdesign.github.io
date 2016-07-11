@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="../../js/angular.min.js"></script>
+    <meta charset="UTF-8">
+    <title>Brian Sopok</title>
+    <link rel="stylesheet" href="../../css/reset.css">
+    <link href="../../css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+
+<body ng-app="brianApp" style="margin-top:25px;">
+
+<div ng-controller="brianController" class="container">
+
+  <div  class="col-xs-12">
+
+    <div class="innerContainer col-xs-6 col-sm-4 col-md-3 width100" ng-repeat="x in people">
+      <div class="verticalCenter">
+        <div class="profile"><img ng-src="{{x.Profile}}"/></div>
+        <div class="name">{{x.Name}}</div>
+        <div class="title">{{x.Title}}</div>
+        <ul class="split">
+          <li class="social">
+            <a ng-href="{{x.Facebook}}">
+              <i class="fa fa-facebook"></i>
+            </a>
+          </li>
+          <li class="social">
+            <a ng-href="{{x.Twitter}}">
+              <i class="fa fa-twitter"></i>
+            </a>
+          </li>
+          <li class="social">
+            <a ng-href="{{x.LinkedIn}}">
+              <i class="fa fa-linkedin"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+
+
+
+
+<script>
+var app = angular.module("brianApp", []);
+app.controller("brianController", function($scope) {
+  $scope.people = [
+    {
+      "Name" : "Mark Handy",
+      "Title" : "Founder & President",
+      "Profile" : "http://www.rls2000.com/about-us/images/about-mark.jpg",
+      "Facebook" : "http://www.facebook.com/#",
+      "Twitter" : "http://www.twitter.com/#",
+      "LinkedIn" : "http://www.linkedin.com/#"
+    },
+    {
+      "Name" : "Tom Borish",
+      "Title" : "CEO",
+      "Profile" : "http://www.rls2000.com/about-us/images/about-tom.jpg",
+      "Facebook" : "http://www.facebook.com/#",
+      "Twitter" : "http://www.twitter.com/#",
+      "LinkedIn" : "http://www.linkedin.com/#"
+    },
+    {
+      "Name" : "Pam Gee",
+      "Title" : "National Sales Manager",
+      "Profile" : "http://www.rls2000.com/about-us/images/about-pam.jpg",
+      "Facebook" : "http://www.facebook.com/#",
+      "Twitter" : "http://www.twitter.com/#",
+      "LinkedIn" : "http://www.linkedin.com/#"
+    },
+    {
+      "Name" : "Mike Bondi",
+      "Title" : "Senior Engineer",
+      "Profile" : "http://www.rls2000.com/about-us/images/about-mikeb.jpg",
+      "Facebook" : "http://www.facebook.com/#",
+      "Twitter" : "http://www.twitter.com/#",
+      "LinkedIn" : "http://www.linkedin.com/#"
+    }
+    ,
+    {
+      "Name" : "Kerri O'Connor",
+      "Title" : "Inside Sales Manager",
+      "Profile" : "http://www.rls2000.com/about-us/images/about-kerri.jpg",
+      "Facebook" : "http://www.facebook.com/#",
+      "Twitter" : "http://www.twitter.com/#",
+      "LinkedIn" : "http://www.linkedin.com/#"
+    },
+    {
+      "Name" : "Cindy Currier",
+      "Title" : "Client Services Manager",
+      "Profile" : "http://www.rls2000.com/about-us/images/about-cindy.jpg",
+      "Facebook" : "http://www.facebook.com/#",
+      "Twitter" : "http://www.twitter.com/#",
+      "LinkedIn" : "http://www.linkedin.com/#"
+    }
+
+  ]
+});
+</script>
+
+</body>
+</html>
