@@ -22,12 +22,8 @@ background: #fff;}
 
 .cardContainer .rlsCard .top {height: 50%;background: #2a2b39;}
 
-.cardContainer .rlsCard .top:after {position: absolute;content: '';}
-
-.cardContainer .rlsCard .top:after {left: 50%;width: 2em;height: 2em;transform: translateX(-50%) rotate(45deg);bottom: 11em;background: inherit;}
-
 .cardContainer .rlsCard .top .logo {display: inline-block;background-image: url(http://www.rls2000.com/about-us/images/about-brian.jpg);background-size: 100%;
-  z-index: 8;padding: .20em;border: 8px solid #fff;position: relative;transform: translateX(-50%);left: 50%;margin-top: .4em;font-size: 4em;}
+  z-index: 8;padding: .20em;border: 2px solid gray;position: relative;transform: translateX(-50%);left: 50%;margin-top: .4em;font-size: 4em;}
 
 .transparent {color: transparent;}
 
@@ -52,11 +48,9 @@ hr {margin-top: -15px;width: 20%;border-top: 1px solid #2a2b39;}
 
 .rlsCard .top .logo, .rlsCard .top, .rlsCard .top:after, .rlsCard .bottom, .rlsCard .contactMe {transition: all 0.62s ease-in-out;}
 
-.rlsCard:hover .top .logo {margin-top: .28em;font-size: 2.3em;border: 3px solid #fff;margin-left: .15em;transform: translateX(0);left: 0;}
+.rlsCard:hover .top .logo {margin-top: .28em;font-size: 2.3em;border: 2px solid gray;margin-left: .15em;transform: translateX(0);left: 0;}
 
 .rlsCard:hover .top {height: 25%;}
-
-.rlsCard:hover .top:after {width: 1.5em;height: 1.5em;bottom: 16.6em;}
 
 .rlsCard:hover .bottom {transform: translateY(400%);}
 
