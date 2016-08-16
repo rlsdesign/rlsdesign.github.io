@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html >
+  <head>
+    <meta charset="UTF-8">
+    <title> Bootstrap 3 Nav Menu Responsive Brand Logo Image - Dispute Bills</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+    <link rel='stylesheet prefetch' href='http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css'>
+
+        <link rel="stylesheet" href="css/style.css">
+
+
+
+
+  </head>
+
+  <body>
+
+
+
+
+
+
+<div class="container topNav">
+
+    <div class="col-xs-3 noPadding hidden-xs">
+      <a style="display:inline-block;font-size:15px;">555-555-5555</a>
+    </div>
+    <div class="noPadding col-xs-12 col-sm-6 text-center socialEven">
+      <a href="#" class="icon-button twitter">
+        <i class="fa fa-twitter"></i><span></span>
+      </a>
+      <a href="#" class="icon-button facebook">
+        <i class="fa fa-facebook"></i><span></span>
+      </a>
+      <a href="#" class="icon-button google-plus">
+        <i class="fa fa-google-plus"></i><span></span>
+      </a>
+      <a href="#" class="icon-button youtube">
+        <i class="fa fa-youtube"></i><span></span>
+      </a>
+      <a href="#" class="icon-button pinterest">
+        <i class="fa fa-pinterest"></i><span></span>
+      </a>
+    </div>
+
+
+  <div class="col-xs-3 noPadding  hidden-xs" style="text-align: right;font-size:15px;">
+    <a class="margin-right:10px;" style="font-size:15px;">Log In</a>
+    <a>Sign Up</a>
+  </div>
+</div>
+
+<hr>
+
+
+<!--Nav-->
+  <nav class="navbar navbar-default navbar-static-top">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar3" >
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <div class="col-xs-4">
+          <a class="navbar-brand img-responsive" href="#">
+            <img src="http://img.mlspropertyfinder.com/images.aspx?type=logo&id=F1967" alt="Logo">
+          </a>
+      </div>
+      </div>
+      <div id="navbar3" class="navbar-collapse collapse">
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Search Homes</a></li>
+          <li><a href="#">Featured Homes</a></li>
+          <li><a target="_blank" href="google.com" class="dropdown-toggle">My Blog</a></li>
+          <li><a href="#">Helpful Links</a></li>
+          <li><a href="#">Contact Me</a></li>
+          <li><a href="#">Extra</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+<!--End Nav-->
+
+
+
+
+
+
+
+
+
+<!--Slider-->
+<header id="myCarousel" class="carousel slide">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+            <li data-target="#myCarousel" data-slide-to="2"></li>
+        </ol>
+
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner">
+            <div class="container" style="position:absolute;z-index: 1; width:100%;top: 50%;transform: translateY(-50%);" >
+              <div class="row">
+                <div style="background-color: rgba(0, 0, 0, 0.6);height:75px;" class="col-xs-offset-2 col-xs-8 col-md-offset-3 col-md-6 ">
+
+                  <div class="input-group" style="top: 50%;transform: translateY(-50%);">
+                    <div class="input-group-btn search-panel">
+                      <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+                        <span id="search_concept">Filter by</span> <span class="caret"></span>
+                      </button>
+                      <ul class="dropdown-menu" role="menu">
+                        <li><a href="#contains">Contains</a></li>
+                        <li><a href="#its_equal">It's equal</a></li>
+                        <li><a href="#greather_than">Greather than ></a></li>
+                        <li><a href="#less_than">Less than < </a></li>
+                        <li class="divider"></li>
+                        <li><a href="#all">Anything</a></li>
+                      </ul>
+                    </div>
+                    <input type="hidden" name="search_param" value="all" id="search_param">
+                    <input type="text" class="form-control" name="x" placeholder="Start typing a city or town">
+                    <span class="input-group-btn">
+                        <button class="btn btn-default" type="button"><span class="glyphicon glyphicon-search"></span></button>
+                    </span>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+            <div class="item active">
+                <div class="fill" style="background-image:url('http://forevertwentysomethings.com/wp-content/uploads/2015/05/Boston-skyline.jpg');"></div>
+                <div class="carousel-caption">
+                    <h2>Caption 1</h2>
+                </div>
+            </div>
+            <div class="item">
+                <div class="fill" style="background-image:url('https://upload.wikimedia.org/wikipedia/commons/1/17/Boston_Back_Bay_reflection.jpg');"></div>
+                <div class="carousel-caption">
+                    <h2>Caption 2</h2>
+                </div>
+            </div>
+            <div class="item">
+                <div class="fill" style="background-image:url('http://forevertwentysomethings.com/wp-content/uploads/2015/05/Boston-skyline.jpg');"></div>
+                <div class="carousel-caption">
+                    <h2>Caption 3</h2>
+                </div>
+            </div>
+        </div>
+
+        <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+            <span class="icon-prev"></span>
+        </a>
+        <a class="right carousel-control" href="#myCarousel" data-slide="next">
+            <span class="icon-next"></span>
+        </a>
+    </header>
+<!--End Slider-->
+
+<section id="featuredProperties">
+  <div class="container">
+    <div class="row">
+      <h2 class="col-xs-12 text-center">Featured Properties</h2>
+      <div class="item  col-xs-12 col-sm-6 col-md-4">
+          <div class="thumbnail noPadding">
+              <div class="favLinkIcons">
+              </div>
+              <img class="group list-group-image width100" src="http://img.mlspropertyfinder.com/images.aspx?type=listings&id=72002110&width=600&n=1" alt="" />
+              <div class="caption">
+                <div class="row">
+                  <div class="col-xs-6 text-left">
+
+                  <h4 class="group inner list-group-item-heading">
+                      8 Grafton Street</br>Worcester, MA</h4>
+                  </div>
+                  <div class="col-xs-6 text-right">
+                    <p class="lead">
+                        $350,000
+                    </p>
+                  </div>
+                  <div style="clear:both;"></div>
+                  <div class="col-xs-4 text-left">
+                      <p>
+                          <strong>8</strong> Beds
+                      </p>
+                  </div>
+                  <div class="col-xs-4 text-center">
+                      <p>
+                        <strong>6</strong> Baths
+                      </p>
+                  </div>
+                  <div class="col-xs-4 text-right">
+                      <p>
+                          <strong>2600</strong> SQFT
+                      </p>
+                  </div>
+
+                  </div>
+              </div>
+          </div>
+      </div>
+      <div class="item  col-xs-12 col-sm-6 col-md-4">
+          <div class="thumbnail noPadding">
+              <div class="favLinkIcons">
+              </div>
+              <img class="group list-group-image width100" src="http://img.mlspropertyfinder.com/images.aspx?type=listings&id=72002110&width=600&n=1" alt="" />
+              <div class="caption">
+                <div class="row">
+                  <div class="col-xs-6 text-left">
+
+                  <h4 class="group inner list-group-item-heading">
+                      8 Grafton Street</br>Worcester, MA</h4>
+                  </div>
+                  <div class="col-xs-6 text-right">
+                    <p class="lead">
+                        $350,000
+                    </p>
+                  </div>
+                  <div style="clear:both;"></div>
+                  <div class="col-xs-4 text-left">
+                      <p>
+                          <strong>8</strong> Beds
+                      </p>
+                  </div>
+                  <div class="col-xs-4 text-center">
+                      <p>
+                        <strong>6</strong> Baths
+                      </p>
+                  </div>
+                  <div class="col-xs-4 text-right">
+                      <p>
+                          <strong>2600</strong> SQFT
+                      </p>
+                  </div>
+
+                  </div>
+              </div>
+          </div>
+      </div>
+      <div class="item  col-xs-12 col-sm-6 col-md-4">
+          <div class="thumbnail noPadding">
+              <div class="favLinkIcons">
+              </div>
+              <img class="group list-group-image width100" src="http://img.mlspropertyfinder.com/images.aspx?type=listings&id=72002110&width=600&n=1" alt="" />
+              <div class="caption">
+                <div class="row">
+                  <div class="col-xs-6 text-left">
+
+                  <h4 class="group inner list-group-item-heading">
+                      8 Grafton Street</br>Worcester, MA</h4>
+                  </div>
+                  <div class="col-xs-6 text-right">
+                    <p class="lead">
+                        $350,000
+                    </p>
+                  </div>
+                  <div style="clear:both;"></div>
+                  <div class="col-xs-4 text-left">
+                      <p>
+                          <strong>8</strong> Beds
+                      </p>
+                  </div>
+                  <div class="col-xs-4 text-center">
+                      <p>
+                        <strong>6</strong> Baths
+                      </p>
+                  </div>
+                  <div class="col-xs-4 text-right">
+                      <p>
+                          <strong>2600</strong> SQFT
+                      </p>
+                  </div>
+
+                  </div>
+              </div>
+          </div>
+      </div>
+    </div>
+  </div>
+
+</section>
+
+
+
+
+
+
+
+
+
+
+    <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+<script src='http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js'></script>
+
+<script>
+
+    $('.carousel').carousel({
+        interval: 7500 //changes the speed
+    })
+
+    //Navbar closes after click
+    $(".dropdown-menu a").click(function() {
+        $(this).closest(".dropdown-menu").prev().dropdown("toggle");
+    });
+
+</script>
+
+
+
+  </body>
+</html>

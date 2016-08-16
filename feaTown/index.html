@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="../js/angular.min.js"></script>
+    <meta charset="UTF-8">
+    <title>Brian Sopok</title>
+
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" type="text/css">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+
+<body ng-app="brianApp" style="margin-top:25px;background-color: #E9F0F5;">
+
+<div ng-controller="brianController" class="container">
+
+  <div class="row">
+    <div  class="col-xs-12">
+      <div class="col-xs-6 col-sm-6 col-md-4" ng-repeat="x in people">
+        <div class="innerContainer col-xs-12 " >
+          <div class="topHead c">{{x.Name}}</div>
+          <img ng-src="{{x.Picture}}" class="img-responsive"/>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div  class="col-xs-12">
+
+      <div class="col-xs-6 col-sm-6 col-md-4 mobile500" ng-repeat="x in people1">
+        <div class="innerContainer col-xs-12 " >
+          <div>
+            <div class="topHead c">{{x.Name1}}</div>
+            <img ng-src="{{x.Picture1}}" class="img-responsive"/>
+          </div>
+        </div>
+      </div>
+
+<!-----CLEAR---->
+<div class="clear"></div>
+<!-----CLEAR---->
+
+
+      <div class="col-xs-6 col-sm-6 col-md-4 mobile500" ng-repeat="y in people2">
+        <div class="col-xs-12 whiteBack" >
+          <div class="col-xs-12">
+            <h4 class="topHead">{{y.Name2}} Town Info</h4>
+          </div>
+
+          <div class="col-xs-12">
+            <p>Find town information about Rutland, MA including homes for sale in Rutland.</p>
+          </div>
+
+          <div class="col-xs-12 listItem">
+            <span class="fa fa-arrow-circle-right"></span>
+            <a href="/results/type-SF/Paxton,MA/">Single Family in {{y.Name2}}</a>
+          </div>
+
+          <div class="col-xs-12 listItem">
+            <span class="fa fa-arrow-circle-right"></span>
+            <a href="/results/type-SF/Paxton,MA/">Multi Family in {{y.Name2}}</a>
+          </div>
+
+          <div class="col-xs-12 listItem">
+            <span class="fa fa-arrow-circle-right"></span>
+            <a href="/results/type-SF/Paxton,MA/">Condos in {{y.Name2}}</a>
+          </div>
+
+          <div class="col-xs-12 listItem">
+            <span class="fa fa-arrow-circle-right"></span>
+            <a href="/results/type-SF/Paxton,MA/">Rentals in {{y.Name2}}</a>
+          </div>
+
+          <div class="col-xs-12 listItem">
+            <span class="fa fa-arrow-circle-right"></span>
+            <a href="/results/type-SF/Paxton,MA/">Commercial in {{y.Name2}}</a>
+          </div>
+
+          <div class="col-xs-12 listItem">
+            <span class="fa fa-arrow-circle-right"></span>
+            <a href="/results/type-SF/Paxton,MA/">Open Houses in {{y.Name2}}</a>
+          </div>
+
+          <div class="col-xs-12">
+            <a href="" target="_blank" class="btn btn-xl readMore">Read More</a>
+          </div>
+        </div>
+      </div>
+
+      <!-----CLEAR---->
+      <div class="clear"></div>
+      <!-----CLEAR---->
+
+
+      <div class="col-xs-6 col-sm-6 col-md-4 mobile500" ng-repeat="y in people2">
+        <div class="col-xs-12 whiteBack" >
+          <div class="col-xs-12">
+            <h4 class="topHead text-center font21">{{y.Name2}} Info</h4>
+          </div>
+
+          <div class="col-xs-12 text-center">
+            <p>Find town information about Rutland, MA including homes for sale in Rutland.</p>
+          </div>
+
+          <div class="col-xs-12 listItem text-center">
+            <span class="fa fa-arrow-circle-right"></span>
+            <a href="/results/type-SF/Paxton,MA/">Single Family in {{y.Name2}}</a>
+          </div>
+
+          <div class="col-xs-12 listItem text-center">
+            <span class="fa fa-arrow-circle-right"></span>
+            <a href="/results/type-SF/Paxton,MA/">Multi Family in {{y.Name2}}</a>
+          </div>
+
+          <div class="col-xs-12 listItem text-center">
+            <span class="fa fa-arrow-circle-right"></span>
+            <a href="/results/type-SF/Paxton,MA/">Condos in {{y.Name2}}</a>
+          </div>
+
+          <div class="col-xs-12 listItem text-center">
+            <span class="fa fa-arrow-circle-right"></span>
+            <a href="/results/type-SF/Paxton,MA/">Rentals in {{y.Name2}}</a>
+          </div>
+
+          <div class="col-xs-12 listItem text-center">
+            <span class="fa fa-arrow-circle-right"></span>
+            <a href="/results/type-SF/Paxton,MA/">Commercial in {{y.Name2}}</a>
+          </div>
+
+          <div class="col-xs-12 listItem text-center">
+            <span class="fa fa-arrow-circle-right"></span>
+            <a href="/results/type-SF/Paxton,MA/">Open Houses in {{y.Name2}}</a>
+          </div>
+
+          <div class="col-xs-12 text-center">
+            <a href="" target="_blank" class="btn btn-xl readMore">Read More</a>
+          </div>
+        </div>
+      </div>
+
+
+
+
+      <!-----CLEAR---->
+      <div class="clear"></div>
+      <!-----CLEAR---->
+
+
+
+
+
+      <div class="col-xs-12 col-sm-6 col-md-4" ng-repeat="z in people3">
+        <div class="col-xs-12 whiteBack">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d94468.47117585412!2d-71.87848173695983!3d42.27554066100889!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89e406585a2a8b0d%3A0x9e137dd87fca4d6d!2sWorcester%2C+MA!5e0!3m2!1sen!2sus!4v1471294875761" width="100%" height="250" frameborder="0" scrolling="no" marginheight="0"></iframe>
+          <div class="col-xs-12">
+            <h4 class="topHead font16">{{z.Name3}}, MA Town Info</h4>
+          </div>
+
+          <div class="col-xs-12">
+            <p>Find town information about {{z.Name3}}, MA including homes for sale in {{z.Name3}}. <span class="mapReadMore">Read More</span><span class="fa fa-arrow-circle-right"></span></p>
+          </div>
+
+
+        </div>
+      </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+  </div>
+
+</div>
+
+
+
+
+
+<script>
+var app = angular.module("brianApp", []);
+app.controller("brianController", function($scope) {
+  $scope.people1 = [
+    {
+      "Name1" : "Worcester",
+      "Picture1" : "http://farm8.staticflickr.com/7135/13563537334_2be3ea40bf_b.jpg"
+    },
+    {
+      "Name1" : "Worcester",
+      "Picture1" : "http://farm8.staticflickr.com/7135/13563537334_2be3ea40bf_b.jpg"
+    },
+    {
+      "Name1" : "Worcester",
+      "Picture1" : "http://farm8.staticflickr.com/7135/13563537334_2be3ea40bf_b.jpg"
+    }
+
+  ]
+  ,
+  $scope.people2 = [
+    {
+      "Name2" : "Worcester, MA",
+      "Picture2" : "http://farm8.staticflickr.com/7135/13563537334_2be3ea40bf_b.jpg"
+    },
+    {
+      "Name2" : "Paxton, MA",
+      "Picture2" : "http://farm8.staticflickr.com/7135/13563537334_2be3ea40bf_b.jpg"
+    },
+    {
+      "Name2" : "Rutland, MA",
+      "Picture2" : "http://farm8.staticflickr.com/7135/13563537334_2be3ea40bf_b.jpg"
+    }
+
+  ]
+  ,
+  $scope.people3 = [
+    {
+      "Name3" : "Worcester",
+      "Picture3" : "http://farm8.staticflickr.com/7135/13563537334_2be3ea40bf_b.jpg"
+    },
+    {
+      "Name3" : "Paxton",
+      "Picture3" : "http://farm8.staticflickr.com/7135/13563537334_2be3ea40bf_b.jpg"
+    },
+    {
+      "Name3" : "Rutland",
+      "Picture3" : "http://farm8.staticflickr.com/7135/13563537334_2be3ea40bf_b.jpg"
+    }
+
+  ]
+});
+</script>
+
+</body>
+</html>
