@@ -1,0 +1,33 @@
+body {font-family: 'Open Sans Condensed', sans-serif;background-color:#bbb;}
+
+/*Spec*/
+.outterPop h1{
+  height: 60px;position: relative;color: #fff;font: 25px/60px sans-serif;
+  text-transform: uppercase;background: #2a3542;
+}
+
+.outterPop h2{color: #333;font-size: 22px;line-height: 30px;margin: 30px 14px;-webkit-font-smoothing: antialiased;}
+
+
+.outterPop em {
+  width: 42px;display: inline-block;position: relative;margin: 0 -20px;line-height: 42px;background: #fff;color: #777;text-align: center;border-radius: 50px;
+}
+
+/*Actual Box*/
+.popup{
+width:450px;height:300px;
+margin:0px auto;text-align:center;
+background-color: #fff;-moz-box-shadow: 0 0 10px rgba(0,0,0,.18);-webkit-box-shadow: 0 0 10px rgba(0,0,0,.18);
+-o-box-shadow: 0 0 10px rgba(0,0,0,.18);
+box-shadow: 0 0 10px rgba(0,0,0,.18);    opacity: .99;
+}
+
+
+/*Buttons*/
+.buttons {
+	display: inline-block;width: 169px;line-height: 42px;color: #fff;text-decoration: none;
+}
+
+#signUp {background: #2a3542;}
+
+#signIn {background: #86112f;}
