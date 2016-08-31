@@ -3,7 +3,7 @@ body {font-family: 'Open Sans Condensed', sans-serif;background-color:#bbb;}
 /*Spec*/
 .outterPop h1{
   height: 60px;position: relative;color: #fff;font: 25px/60px sans-serif;
-  text-transform: uppercase;background: #2a3542;
+  text-transform: uppercase;background: #5a8496;
 }
 
 .outterPop h2{color: #333;font-size: 22px;line-height: 30px;margin: 30px 14px;-webkit-font-smoothing: antialiased;}
@@ -28,6 +28,6 @@ box-shadow: 0 0 10px rgba(0,0,0,.18);    opacity: .99;
 	display: inline-block;width: 169px;line-height: 42px;color: #fff;text-decoration: none;
 }
 
-#signUp {background: #2a3542;}
+#signUp {background: #5a8496;}
 
-#signIn {background: #86112f;}
+#signIn {background: #715f39;}
