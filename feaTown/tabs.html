@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Case</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<div class="container hidden-xs" >
+  <ul class="nav nav-tabs">
+    <li class="active"><a data-toggle="tab" href="#home">Home</a></li>
+    <li><a data-toggle="tab" href="#menu1">Menu 1</a></li>
+    <li><a data-toggle="tab" href="#menu2">Menu 2</a></li>
+    <li><a data-toggle="tab" href="#menu3">Menu 3</a></li>
+  </ul>
+
+  <div class="tab-content">
+    <div id="home" class="tab-pane fade in active">
+      <div class="row" style="margin-top:10px;">
+        <div class="col-sm-3 ">
+          <img src="http://briansopok.com/img/brian303.jpg" class="img-responsive">
+        </div>
+        <div class="col-sm-9 text-center">
+          <p>
+Asheville offers the perfect combination of opportunity and quality of life. Nationally recognized for its growing economy, restaurants and craft breweries, lively arts and music scene, outdoor recreation, and natural beauty, the largest city in western North Carolina has it all.  As you walk around Asheville it’s plain to see: people are happy here. A unique architectural blend of Art Deco, Beaux Arts and Neo-classical style magnify the excitement radiating from the local shops and music venues. Hiking, skiing and fly-fishing are all easily accessible due to the close proximity of the Blue Ridge and Smoky Mountains.  The wide range of real estate options in Asheville reflect the diversity of its population; whether you’re looking for a condo, golf course property, modest single family home, or luxury log cabin, GreyBeard can help guide you through your next real estate decision.</p>
+        </div>
+      </div>
+    </div>
+    <div id="menu1" class="tab-pane fade">
+      <h3>Menu 1</h3>
+      <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+    </div>
+    <div id="menu2" class="tab-pane fade">
+      <h3>Menu 2</h3>
+      <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
+    </div>
+    <div id="menu3" class="tab-pane fade">
+      <h3>Menu 3</h3>
+      <p>Eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+    </div>
+  </div>
+</div>
+
+
+
+
+<div class="container visible-xs">
+  <div class="panel-group" id="accordion">
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title">
+          <a data-toggle="collapse" data-parent="#accordion" href="#collapse1">Home</a>
+        </h4>
+      </div>
+      <div id="collapse1" class="panel-collapse collapse in">
+        <div class="col-sm-3 ">
+          <img src="http://briansopok.com/img/brian303.jpg" class="img-responsive">
+        </div>
+        <div class="col-sm-9 text-center">
+          <p>
+            Asheville offers the perfect combination of opportunity and quality of life. Nationally recognized for its growing economy, restaurants and craft breweries, lively arts and music scene, outdoor recreation, and natural beauty, the largest city in western North Carolina has it all.  As you walk around Asheville it’s plain to see: people are happy here. A unique architectural blend of Art Deco, Beaux Arts and Neo-classical style magnify the excitement radiating from the local shops and music venues. Hiking, skiing and fly-fishing are all easily accessible due to the close proximity of the Blue Ridge and Smoky Mountains.  The wide range of real estate options in Asheville reflect the diversity of its population; whether you’re looking for a condo, golf course property, modest single family home, or luxury log cabin, GreyBeard can help guide you through your next real estate decision.
+          </p>
+        </div>
+      </div>
+      </div>
+    </div>
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title">
+          <a data-toggle="collapse" data-parent="#accordion" href="#collapse2">Menu 1</a>
+        </h4>
+      </div>
+      <div id="collapse2" class="panel-collapse collapse">
+        <div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
+      </div>
+    </div>
+
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title">
+          <a data-toggle="collapse" data-parent="#accordion" href="#collapse3">Menu 2</a>
+        </h4>
+      </div>
+      <div id="collapse3" class="panel-collapse collapse">
+        <div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
+      </div>
+    </div>
+
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title">
+          <a data-toggle="collapse" data-parent="#accordion" href="#collapse4">Menu 3</a>
+        </h4>
+      </div>
+      <div id="collapse4" class="panel-collapse collapse">
+        <div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
+      </div>
+    </div>
+
+
+
+
+  </div>
+</div>
+
+
+
+
+
+
+
+</body>
+
+
+
+
+<style>
+.nav-tabs>li>a {
+    margin-right: 2px;
+    line-height: 1.42857143;
+        border: none;
+    border-radius: 4px 4px 0 0;
+}
+
+.nav-tabs>li.active>a, .nav-tabs>li.active>a:focus, .nav-tabs>li.active>a:hover {
+    color: #000;
+    cursor: default;
+    background-color: #fff;
+    border: 0px solid #ddd;
+    border-bottom-color: #030;
+    border-bottom: 4px solid;
+}
+
+a{
+    color: #000;
+    text-decoration: none;
+}
+
+.nav-tabs {
+    border-bottom: 1px solid #3b3b3b;
+    text-align: center;
+}
+
+
+.nav-tabs>li {
+    float: none;
+    display: inline-block;
+}
+
+
+.nav>li>a:focus, .nav>li>a:hover {
+    text-decoration: none;
+    background-color: transparent;
+    border-bottom-color: #030;
+    border-bottom: 4px solid;
+}
+
+
+
+a:focus, a:hover {
+   color: #000;
+   text-decoration: underline;
+   border-bottom-color: gray ;
+}
+
+
+@media (max-width: 768px){
+  img {margin: 0 auto;}
+
+}
+
+</style>
+</html>
