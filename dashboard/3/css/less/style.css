@@ -37,7 +37,7 @@ a:hover,
   transform: translatey(-50%);
 }
 .page-header {
-  margin: 20px 0px 20px;
+  margin: 20px 0px 15px;
   padding-bottom: 0px;
   border-bottom: 0px solid #eee;
 }
@@ -47,6 +47,7 @@ a:hover,
 hr {
   border-top: 1px solid #ccc;
   margin-top: 0px;
+  margin-bottom: 15px;
 }
 #wrapper {
   width: 100%;
