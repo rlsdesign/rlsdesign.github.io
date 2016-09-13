@@ -1,0 +1,12 @@
+//Panels Mixin
+.panels(@color){
+  border-color: @color;
+  .panel-heading {
+    border-color: @color;color: white;background-color: @color;border-radius: 0px;
+  }
+  a {
+    color: @color; &:hover {
+      color: darken(@color, 15%);
+    }
+  }
+}
