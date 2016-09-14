@@ -19,7 +19,7 @@
 <body ng-app="webPreferencesFeaturedTownsApp">
    <div id="wrapper" ng-controller="webPreferencesFeaturedTownsController">
 
-     <nav class="navbar navbar-default navbar-static-top" role="navigation" style="margin-bottom: 0">
+     <nav class="navbar navbar-default navbar-static-top marginBottom0" role="navigation" >
         <div class="navbar-header">
            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
               <span class="sr-only">Toggle navigation</span>
@@ -31,7 +31,7 @@
         </div>
 
         <ul class="nav navbar-top-links navbar-right">
-           <li class="dropdown">
+           <li class="">
               <a class="dropdown-toggle" data-toggle="dropdown" href="#">
                  Brian Sopok <i class="fa fa-user fa-fw"></i>  <i class="fa fa-caret-down"></i>
               </a>
@@ -52,10 +52,13 @@
            <div class="sidebar-nav navbar-collapse">
               <ul class="nav" id="side-menu">
                  <li>
-                    <img src="http://briansopok.com/img/brian303.jpg" width="150" height="150" class="img-responsive " alt="" style="border-radius: 50%;margin: 10px auto;">
+                    <img src="http://briansopok.com/img/brian303.jpg" width="150" height="150" class="img-responsive navImg"
                  </li>
                  <li>
                     <a href="index.html"><i class="fa fa-dashboard fa-fw"></i> Dashboard</a>
+                 </li>
+                 <li>
+                    <a href="userProfile.html"><i class="fa fa-pencil fa-fw"></i>Edit Profile</a>
                  </li>
                  <li>
                     <a href="#"><i class="fa fa-wrench fa-fw"></i>Web Preferences<span class="fa arrow"></span></a>
@@ -75,8 +78,29 @@
                     <a href="socialMedia.html"><i class="fa fa-share-square-o fa-fw"></i>Social Media</a>
                  </li>
                  <li>
-                    <a href="userProfile.html"><i class="fa fa-pencil fa-fw"></i>Edit Profile</a>
+                    <a href="#"><i class="fa fa-bar-chart-o fa-fw"></i> Blog Controls<span class="fa arrow"></span></a>
+                    <ul class="nav nav-second-level">
+                       <li>
+                          <a href="#">Create New Posts</a>
+                       </li>
+                       <li>
+                          <a href="#">Manage Posts</a>
+                       </li>
+                       <li>
+                          <a href="#">Auto Poster Settings</a>
+                       </li>
+                       <li>
+                          <a href="#">Manage Categories</a>
+                       </li>
+                       <li>
+                          <a href="#">Article Library</a>
+                       </li>
+                       <li>
+                          <a href="#">Visit My Blog</a>
+                       </li>
+                    </ul>
                  </li>
+
                  <div style="display:none;">
                     <li>
                        <a href="#"><i class="fa fa-files-o fa-fw"></i>Pages<span class="fa arrow"></span></a>
@@ -89,29 +113,7 @@
                           </li>
                        </ul>
                     </li>
-                    <li>
-                       <a href="#"><i class="fa fa-bar-chart-o fa-fw"></i> Blog Controls<span class="fa arrow"></span></a>
-                       <ul class="nav nav-second-level">
-                          <li>
-                             <a href="#">Create New Posts</a>
-                          </li>
-                          <li>
-                             <a href="#">Manage Posts</a>
-                          </li>
-                          <li>
-                             <a href="#">Auto Poster Settings</a>
-                          </li>
-                          <li>
-                             <a href="#">Manage Categories</a>
-                          </li>
-                          <li>
-                             <a href="#">Article Library</a>
-                          </li>
-                          <li>
-                             <a href="#">Visit My Blog</a>
-                          </li>
-                       </ul>
-                    </li>
+
                     <li>
                        <a href="#"><i class="fa fa-table fa-fw"></i>YouTube Tours</a>
                     </li>
@@ -127,6 +129,7 @@
         </div>
 
      </nav>
+
 
       <div id="page-wrapper" class="webPreferencesFeaturedTowns">
 
@@ -175,8 +178,8 @@
                         <div class="col-xs-5 col-sm-4 col-md-4 col-lg-3 form-group">
                            <label for="">{{item.label}}:</label>
                         </div>
-                        <div class="col-xs-7 col-sm-8 col-md-8 col-lg-9 form-group">
-                           <select class="form-control">
+                        <div class="col-xs-7 col-sm-8 col-md-8 col-lg-9 form-group dropdown">
+                           <select class="form-control ">
                               <option ng-repeat="y in item.inputType">{{y}}</option>
                            </select>
                         </div>
@@ -193,15 +196,26 @@
              <div class="row">
                  <div class="col-md-offset-1 col-md-10 submitBox">
                    <div class="col-md-12">
-                     <h3>Publish</h3>
+                     <h3>Save Changes</h3>
                      <hr>
-                     <h4>Resources</h4>
+                     <button type="button" class="btn btn-primary btn-submit"><i class="fa fa-floppy-o" aria-hidden="true"></i><span class="btn-wording">Save Changes<span></button>
+                   </div>
+                 </div>
+             </div>
+           </section>
+
+           <section id="submit">
+             <div class="row">
+                 <div class="col-md-offset-1 col-md-10 submitBox">
+                   <div class="col-md-12">
+                     <h3>Resources</h3>
+                     <hr>
                      <a href=""><p class="resourcesLink">Support Website</p></a>
                      <a href=""><p class="resourcesLink">Contact Support</p></a>
                      <a href=""><p class="resourcesLink">Webinars and Tutorials</p></a>
                      <a href=""><p class="resourcesLink">Billing</p></a>
                      <a href=""><p class="resourcesLink">Updates From RLS2000</p></a>
-                     <button type="button" class="btn btn-primary btn-submit"><i class="fa fa-floppy-o" aria-hidden="true"></i><span class="btn-wording">Save Changes<span></button>
+
                    </div>
                  </div>
              </div>

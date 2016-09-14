@@ -28,8 +28,11 @@ a:hover,
 }
 @media (max-width: 450px) {
   .height175 {
-    min-height: 100px;
+    min-height: 150px;
   }
+}
+.img-responsive {
+  max-width: 85%;
 }
 .vertCenter {
   position: absolute;
@@ -43,6 +46,7 @@ a:hover,
 }
 .page-header-sub {
   padding-bottom: 9px;
+  border-bottom: 1px solid #bbb;
 }
 hr {
   border-top: 1px solid #ccc;
@@ -90,6 +94,12 @@ label {
 }
 .floatRight {
   float: right;
+}
+.paddingRight {
+  padding-right: 10px;
+}
+.marginBottom0 {
+  margin-bottom: 0px;
 }
 .inlineBlock {
   display: inline-block;
@@ -175,16 +185,23 @@ section {
   float: right;
 }
 .sidebar .fa.arrow:before {
-  content: "\f104";
+  content: "\f107";
 }
 .sidebar .active > a > .fa.arrow:before {
-  content: "\f107";
+  content: "\f104";
 }
 .sidebar .nav-second-level li {
   border-bottom: none !important;
 }
 .sidebar .nav-second-level li a {
   padding-left: 37px;
+}
+.navImg {
+  border-radius: 50%;
+  margin: 10px auto;
+}
+.proImg {
+  border-radius: 50%;
 }
 @media (min-width: 768px) {
   .sidebar {
@@ -319,6 +336,23 @@ section {
   height: 35px;
   margin: 16px auto;
 }
+.dropdown {
+  position: relative;
+}
+.dropdown:after {
+  content: "";
+  position: absolute;
+  right: 30px;
+  top: 17px;
+  width: 0;
+  height: 0;
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;
+  border-top: 8px solid #333;
+}
+select.form-control {
+  cursor: pointer;
+}
 @media (max-width: 450px) {
   .form-group {
     margin-bottom: 0px;
@@ -384,6 +418,11 @@ section {
 }
 .panel-body {
   height: 200px;
+}
+.panel-default > .panel-heading {
+  background-color: #2a3542;
+  color: white;
+  border-radius: 0px;
 }
 #activeClients thead {
   background-color: #2a3542;
