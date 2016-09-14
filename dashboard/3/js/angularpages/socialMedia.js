@@ -14,6 +14,14 @@ app.controller("socialMediaController", function($scope)
     {"socialMedias" : "Instagram", "fa": "fa-instagram"},
     {"socialMedias" : "Flickr", "fa": "fa-flickr"}
   ]
+  ,
+  $scope.socialMediaPoster =
+  [
+    {"socialMediaPoster" : "facebook", "fa": "fa-facebook", "active": true},
+    {"socialMediaPoster" : "twitter", "fa": "fa-twitter", "active": false},
+    {"socialMediaPoster" : "google", "fa": "fa-google-plus", "active": false},
+    {"socialMediaPoster" : "linkedin", "fa": "fa-linkedin", "active": false}
+  ]
 
 
 });

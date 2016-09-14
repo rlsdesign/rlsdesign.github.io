@@ -2,6 +2,7 @@ body {
   background-color: #f8f8f8;
   font-family: "Open Sans", sans-serif;
   font-weight: 600;
+  letter-spacing: 0.2px;
   -webkit-font-smoothing: antialiased;
 }
 a,
@@ -38,6 +39,11 @@ a:hover,
   position: absolute;
   top: 50%;
   transform: translatey(-50%);
+}
+.center {
+  text-align: center;
+  display: block;
+  margin: 0 auto;
 }
 .page-header {
   margin: 20px 0px 15px;
@@ -101,21 +107,30 @@ label {
 .marginBottom0 {
   margin-bottom: 0px;
 }
+.marginBottom10 {
+  margin-bottom: 10px;
+}
 .inlineBlock {
   display: inline-block;
 }
 h3 {
   margin-top: 10px;
 }
+h1.page-header {
+  font-size: 30px;
+}
 section {
   position: relative;
   width: 100%;
   margin-bottom: 10px;
-  padding: 10px 17px 15px 17px;
+  padding: 10px 17px 10px 17px;
   display: inline-block;
   background: #fefefe;
   border: 1px solid #E6E9ED;
   -webkit-column-break-inside: avoid;
+}
+.fa.fa-24 {
+  font-size: 24px;
 }
 .navbar-top-links {
   margin-right: 0;
@@ -346,8 +361,8 @@ section {
   top: 17px;
   width: 0;
   height: 0;
-  border-left: 8px solid transparent;
-  border-right: 8px solid transparent;
+  border-left: 7px solid transparent;
+  border-right: 7px solid transparent;
   border-top: 8px solid #333;
 }
 select.form-control {
@@ -434,4 +449,124 @@ select.form-control {
 }
 #activeClients td {
   word-break: break-word;
+}
+i.circleIcon {
+  background: #c5c5c5;
+  color: #eaeaea;
+  line-height: 40px;
+  font-size: 25px;
+  width: 40px;
+  height: 40px;
+  display: block;
+  margin: 0 auto;
+  border-radius: 50%;
+  -o-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+}
+section.autoposter .buttonSlide {
+  font-weight: bold;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  -webkit-transition: all ease 0.8s;
+  -moz-transition: all ease 0.8s;
+  transition: all ease 0.8s;
+}
+section.autoposter button {
+  background-color: #d8d8d8 !important;
+  border-color: #d8d8d8 !important;
+  color: #656565 !important;
+  border-radius: 0px;
+  width: 100%;
+}
+section.autoposter:hover i,
+section.autoposter.active i,
+section.autoposter:hover button,
+section.autoposter.active button {
+  color: white;
+  -webkit-transition: 0.8s ease-in-out;
+  -moz-transition: 0.8s ease-in-out;
+  -ms-transition: 0.8s ease-in-out;
+  -o-transition: 0.8s ease-in-out;
+}
+section.autoposter:hover .buttonSlide,
+section.autoposter.active .buttonSlide {
+  color: #FFF;
+}
+section.autoposter.facebook .buttonSlide {
+  box-shadow: inset 0 0 0 0 #305c99;
+}
+section.autoposter.facebook:hover i,
+section.autoposter.facebook.active i,
+section.autoposter.facebook:hover button,
+section.autoposter.facebook.active button {
+  background: #305c99;
+  color: white !important;
+  border-color: #305c99;
+}
+section.autoposter.facebook:hover .buttonSlide,
+section.autoposter.facebook.active .buttonSlide {
+  box-shadow: inset 0 -100px 0 0 #305c99;
+}
+section.autoposter.facebook.nonactive i {
+  background: #c5c5c5;
+  color: #eaeaea;
+}
+section.autoposter.twitter .buttonSlide {
+  box-shadow: inset 0 0 0 0 #00cdff;
+}
+section.autoposter.twitter:hover i,
+section.autoposter.twitter.active i,
+section.autoposter.twitter:hover button,
+section.autoposter.twitter.active button {
+  background: #00cdff;
+  color: white !important;
+  border-color: #00cdff;
+}
+section.autoposter.twitter:hover .buttonSlide,
+section.autoposter.twitter.active .buttonSlide {
+  box-shadow: inset 0 -100px 0 0 #00cdff;
+}
+section.autoposter.twitter.nonactive i {
+  background: #c5c5c5;
+  color: #eaeaea;
+}
+section.autoposter.google .buttonSlide {
+  box-shadow: inset 0 0 0 0 #d24228;
+}
+section.autoposter.google:hover i,
+section.autoposter.google.active i,
+section.autoposter.google:hover button,
+section.autoposter.google.active button {
+  background: #d24228;
+  color: white !important;
+  border-color: #d24228;
+}
+section.autoposter.google:hover .buttonSlide,
+section.autoposter.google.active .buttonSlide {
+  box-shadow: inset 0 -100px 0 0 #d24228;
+}
+section.autoposter.google.nonactive i {
+  background: #c5c5c5;
+  color: #eaeaea;
+}
+section.autoposter.linkedin .buttonSlide {
+  box-shadow: inset 0 0 0 0 #007bb6;
+}
+section.autoposter.linkedin:hover i,
+section.autoposter.linkedin.active i,
+section.autoposter.linkedin:hover button,
+section.autoposter.linkedin.active button {
+  background: #007bb6;
+  color: white !important;
+  border-color: #007bb6;
+}
+section.autoposter.linkedin:hover .buttonSlide,
+section.autoposter.linkedin.active .buttonSlide {
+  box-shadow: inset 0 -100px 0 0 #007bb6;
+}
+section.autoposter.linkedin.nonactive i {
+  background: #c5c5c5;
+  color: #eaeaea;
 }

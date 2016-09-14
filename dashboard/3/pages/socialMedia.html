@@ -147,6 +147,39 @@
     <hr>
       <div class="row">
       <div class="col-xs-12 col-md-8 col-lg-9">
+
+        <section id="autoPosters" >
+          <div class="row">
+              <div class="col-lg-12">
+                <h3 class="page-header-sub"><i class="fa fa-share-alt paddingRight" aria-hidden="true"></i>Blog to Social Media Auto Poster</h3>
+              </div>
+          </div>
+        </section>
+
+        <div class="row">
+          <div class="col-xs-6 col-lg-3" ng-repeat="x in socialMediaPoster"  >
+            <section class="autoposter {{x.socialMediaPoster}}" ng-class="{active: x.active === true, nonactive: x.active !== true}" ng-click="x.active=!x.active">
+                <div class="col-xs-12 paddingNone marginBottom10">
+                  <i class="fa fa-24 {{x.fa}} center circleIcon"
+               aria-hidden="true"></i>
+                </div>
+                <div class="col-xs-12 paddingNone">
+                  <button type="button" class=" buttonSlide btn btn-primary center">
+                    <span ng-if="x.active == 0">Install</span>
+                    <span ng-if="x.active == 1">Installed</span> </button>
+                </div>
+            </section>
+          </div>
+        </div>
+
+
+
+
+
+
+
+
+
         <section ng-repeat="x in socialMedia" id="{{x.socialMedias}}" >
           <div class="row">
               <div class="col-lg-12">
@@ -156,8 +189,6 @@
           </div>
 
           <div class="row">
-
-
             <form role="form">
               <div class="clear">
                 <div class="col-xs-5 col-sm-4 col-md-4 col-lg-3 form-group">
@@ -168,13 +199,6 @@
                 </div>
               </div>
             </form>
-
-
-
-
-
-
-
           </div>
         </section>
       </div>
