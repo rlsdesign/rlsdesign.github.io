@@ -157,7 +157,7 @@
         </section>
 
         <div class="row">
-          <div class="col-xs-12 col-sm-6 col-lg-6" ng-repeat="x in socialMediaPoster"  >
+          <div class="col-xs-12 col-sm-6 col-lg-6 fix500" ng-repeat="x in socialMediaPoster"  >
             <section class="autoposter {{x.socialMediaPoster}}" ng-class="{active: x.active === true, nonactive: x.active !== true}" ng-click="x.active=!x.active">
               <h3 class="page-header-sub">{{x.socialMediaPoster}} Poster</h3>
                 <div class="col-xs-12 paddingNone marginBottom10">

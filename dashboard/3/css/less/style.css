@@ -501,6 +501,11 @@ section.autoposter.active .buttonSlide {
     font-size: 22px;
   }
 }
+@media (min-width: 525px) and (max-width: 768px) {
+  .fix500 {
+    width: 50%;
+  }
+}
 section.autoposter.Facebook .buttonSlide {
   box-shadow: inset 0 0 0 0 #305c99;
 }
