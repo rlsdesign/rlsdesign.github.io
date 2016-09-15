@@ -340,12 +340,13 @@ section.autoposter{
   	-moz-transition: all ease 0.8s;
   	transition: all ease 0.8s;
   }
-  button {
+  button, fa {
     background-color: #d8d8d8 !important;
     border-color: #d8d8d8 !important;
     color: #656565 !important;
     border-radius:0px;
     width: 100%;
+    padding: 6px 0px;
   }
   &:hover, &.active {
     i , button{
@@ -358,23 +359,25 @@ section.autoposter{
     .buttonSlide{
       color: #FFF;
     }
-
   }
-} 
+  @media (min-width: 768px) and (max-width: 1200px) {
+    h3 {font-size:22px;}
+  }
+}
 
 
-section.autoposter.facebook{
+section.autoposter.Facebook{
   .autoposters(#305c99);
 }
 
-section.autoposter.twitter{
+section.autoposter.Twitter{
   .autoposters(#00cdff);
 }
 
-section.autoposter.google{
+section.autoposter.Google{
   .autoposters(#d24228);
 }
 
-section.autoposter.linkedin{
+section.autoposter.LinkedIn{
   .autoposters(#007bb6);
 }

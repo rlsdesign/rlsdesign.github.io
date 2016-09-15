@@ -473,12 +473,14 @@ section.autoposter .buttonSlide {
   -moz-transition: all ease 0.8s;
   transition: all ease 0.8s;
 }
-section.autoposter button {
+section.autoposter button,
+section.autoposter fa {
   background-color: #d8d8d8 !important;
   border-color: #d8d8d8 !important;
   color: #656565 !important;
   border-radius: 0px;
   width: 100%;
+  padding: 6px 0px;
 }
 section.autoposter:hover i,
 section.autoposter.active i,
@@ -494,82 +496,87 @@ section.autoposter:hover .buttonSlide,
 section.autoposter.active .buttonSlide {
   color: #FFF;
 }
-section.autoposter.facebook .buttonSlide {
+@media (min-width: 768px) and (max-width: 1200px) {
+  section.autoposter h3 {
+    font-size: 22px;
+  }
+}
+section.autoposter.Facebook .buttonSlide {
   box-shadow: inset 0 0 0 0 #305c99;
 }
-section.autoposter.facebook:hover i,
-section.autoposter.facebook.active i,
-section.autoposter.facebook:hover button,
-section.autoposter.facebook.active button {
+section.autoposter.Facebook:hover i,
+section.autoposter.Facebook.active i,
+section.autoposter.Facebook:hover button,
+section.autoposter.Facebook.active button {
   background: #305c99;
   color: white !important;
   border-color: #305c99;
 }
-section.autoposter.facebook:hover .buttonSlide,
-section.autoposter.facebook.active .buttonSlide {
+section.autoposter.Facebook:hover .buttonSlide,
+section.autoposter.Facebook.active .buttonSlide {
   box-shadow: inset 0 -100px 0 0 #305c99;
 }
-section.autoposter.facebook.nonactive i {
+section.autoposter.Facebook.nonactive i {
   background: #d8d8d8;
   color: white !important;
   border-color: #d8d8d8;
 }
-section.autoposter.twitter .buttonSlide {
+section.autoposter.Twitter .buttonSlide {
   box-shadow: inset 0 0 0 0 #00cdff;
 }
-section.autoposter.twitter:hover i,
-section.autoposter.twitter.active i,
-section.autoposter.twitter:hover button,
-section.autoposter.twitter.active button {
+section.autoposter.Twitter:hover i,
+section.autoposter.Twitter.active i,
+section.autoposter.Twitter:hover button,
+section.autoposter.Twitter.active button {
   background: #00cdff;
   color: white !important;
   border-color: #00cdff;
 }
-section.autoposter.twitter:hover .buttonSlide,
-section.autoposter.twitter.active .buttonSlide {
+section.autoposter.Twitter:hover .buttonSlide,
+section.autoposter.Twitter.active .buttonSlide {
   box-shadow: inset 0 -100px 0 0 #00cdff;
 }
-section.autoposter.twitter.nonactive i {
+section.autoposter.Twitter.nonactive i {
   background: #d8d8d8;
   color: white !important;
   border-color: #d8d8d8;
 }
-section.autoposter.google .buttonSlide {
+section.autoposter.Google .buttonSlide {
   box-shadow: inset 0 0 0 0 #d24228;
 }
-section.autoposter.google:hover i,
-section.autoposter.google.active i,
-section.autoposter.google:hover button,
-section.autoposter.google.active button {
+section.autoposter.Google:hover i,
+section.autoposter.Google.active i,
+section.autoposter.Google:hover button,
+section.autoposter.Google.active button {
   background: #d24228;
   color: white !important;
   border-color: #d24228;
 }
-section.autoposter.google:hover .buttonSlide,
-section.autoposter.google.active .buttonSlide {
+section.autoposter.Google:hover .buttonSlide,
+section.autoposter.Google.active .buttonSlide {
   box-shadow: inset 0 -100px 0 0 #d24228;
 }
-section.autoposter.google.nonactive i {
+section.autoposter.Google.nonactive i {
   background: #d8d8d8;
   color: white !important;
   border-color: #d8d8d8;
 }
-section.autoposter.linkedin .buttonSlide {
+section.autoposter.LinkedIn .buttonSlide {
   box-shadow: inset 0 0 0 0 #007bb6;
 }
-section.autoposter.linkedin:hover i,
-section.autoposter.linkedin.active i,
-section.autoposter.linkedin:hover button,
-section.autoposter.linkedin.active button {
+section.autoposter.LinkedIn:hover i,
+section.autoposter.LinkedIn.active i,
+section.autoposter.LinkedIn:hover button,
+section.autoposter.LinkedIn.active button {
   background: #007bb6;
   color: white !important;
   border-color: #007bb6;
 }
-section.autoposter.linkedin:hover .buttonSlide,
-section.autoposter.linkedin.active .buttonSlide {
+section.autoposter.LinkedIn:hover .buttonSlide,
+section.autoposter.LinkedIn.active .buttonSlide {
   box-shadow: inset 0 -100px 0 0 #007bb6;
 }
-section.autoposter.linkedin.nonactive i {
+section.autoposter.LinkedIn.nonactive i {
   background: #d8d8d8;
   color: white !important;
   border-color: #d8d8d8;

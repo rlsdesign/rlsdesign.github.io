@@ -11,16 +11,15 @@ app.controller("socialMediaController", function($scope)
     {"socialMedias" : "GooglePlus", "fa": "fa-google-plus-square"},
     {"socialMedias" : "Pinterest", "fa": "fa-pinterest-square"},
     {"socialMedias" : "Yelp", "fa": "fa-yelp"},
-    {"socialMedias" : "Instagram", "fa": "fa-instagram"},
-    {"socialMedias" : "Flickr", "fa": "fa-flickr"}
+    {"socialMedias" : "Instagram", "fa": "fa-instagram"}
   ]
   ,
   $scope.socialMediaPoster =
   [
-    {"socialMediaPoster" : "facebook", "fa": "fa-facebook", "active": true},
-    {"socialMediaPoster" : "twitter", "fa": "fa-twitter", "active": false},
-    {"socialMediaPoster" : "google", "fa": "fa-google-plus", "active": false},
-    {"socialMediaPoster" : "linkedin", "fa": "fa-linkedin", "active": false}
+    {"socialMediaPoster" : "Facebook", "fa": "fa-facebook", "active": true},
+    {"socialMediaPoster" : "Twitter", "fa": "fa-twitter", "active": false},
+    {"socialMediaPoster" : "Google", "fa": "fa-google-plus", "active": false},
+    {"socialMediaPoster" : "LinkedIn", "fa": "fa-linkedin", "active": false}
   ]
 
 
