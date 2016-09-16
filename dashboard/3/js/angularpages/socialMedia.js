@@ -21,6 +21,8 @@ app.controller("socialMediaController", function($scope)
     {"socialMediaPoster" : "Google", "fa": "fa-google-plus", "active": false},
     {"socialMediaPoster" : "LinkedIn", "fa": "fa-linkedin", "active": false}
   ]
+  ,
+  $scope.date = new Date();
 
 
 });

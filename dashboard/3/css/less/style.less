@@ -51,6 +51,9 @@ label{font-size: 15px;padding: 10px 0px;display: block;height: 34px;}
 h3 {margin-top: 10px;}
 h1.page-header{font-size: 30px;}
 
+@media (min-width: 525px) and (max-width: 768px) {
+.fix500 {width:50%}
+}
 
 section {     position: relative;
     width: 100%;
@@ -63,6 +66,8 @@ section {     position: relative;
   }
 
 .fa.fa-24{font-size: 24px; }
+
+.radiusZero{border-radius: 0px;}
 
 
 
@@ -136,13 +141,13 @@ section {     position: relative;
 
 
 @media(min-width:768px) {
-    .sidebar {z-index: 1;position: absolute;width: 250px;margin-top: 51px;}
+    .sidebar {z-index: 1;position: absolute;width: 250px;margin-top: 68px;}
     .navbar-top-links .dropdown-tasks,
     .navbar-top-links .dropdown-alerts {margin-left: auto;}
 }
 
 // Dashboard Panels
-.dashboard{
+
   .huge {font-size: 40px;}
   .panel-blue {.panels(@brand-primary);}
   .panel-green {.panels(@brand-success);}
@@ -150,16 +155,13 @@ section {     position: relative;
   .panel-yellow{.panels(@brand-warning);}
   .panel-brown{.panels(@brand-brown);}
   .panel-orange{.panels(@brand-orange);}
-}
-
-.panel{border-radius: 0px;}
 
 
 
-//User Profile
-.userProfile{
 
-}
+
+
+
 
 //Inputs
 
@@ -306,7 +308,7 @@ select.form-control{cursor:pointer;}
 
 
 
-
+//Autoposters
 
 
 
@@ -341,9 +343,9 @@ section.autoposter{
   	transition: all ease 0.8s;
   }
   button, fa {
-    background-color: #d8d8d8 !important;
-    border-color: #d8d8d8 !important;
-    color: #656565 !important;
+    background-color: @gray-light2 !important;
+    border-color: @gray-light2 !important;
+    color: @gray !important;
     border-radius:0px;
     width: 100%;
     padding: 6px 0px;
@@ -361,27 +363,25 @@ section.autoposter{
     }
   }
   @media (min-width: 768px) and (max-width: 1200px) {
-    h3 {font-size:22px;}
+    h3 {font-size:21px;}
   }
 }
 
-@media (min-width: 525px) and (max-width: 768px) {
-.fix500 {width:50%}
-}
+
 
 
 section.autoposter.Facebook{
-  .autoposters(#305c99);
+  .autoposters(@facebook);
 }
 
 section.autoposter.Twitter{
-  .autoposters(#00cdff);
+  .autoposters(@twitter);
 }
 
 section.autoposter.Google{
-  .autoposters(#d24228);
+  .autoposters(@google);
 }
 
 section.autoposter.LinkedIn{
-  .autoposters(#007bb6);
+  .autoposters(@linkedin);
 }

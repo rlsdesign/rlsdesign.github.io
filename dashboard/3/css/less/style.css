@@ -119,6 +119,11 @@ h3 {
 h1.page-header {
   font-size: 30px;
 }
+@media (min-width: 525px) and (max-width: 768px) {
+  .fix500 {
+    width: 50%;
+  }
+}
 section {
   position: relative;
   width: 100%;
@@ -131,6 +136,9 @@ section {
 }
 .fa.fa-24 {
   font-size: 24px;
+}
+.radiusZero {
+  border-radius: 0px;
 }
 .navbar-top-links {
   margin-right: 0;
@@ -223,108 +231,105 @@ section {
     z-index: 1;
     position: absolute;
     width: 250px;
-    margin-top: 51px;
+    margin-top: 68px;
   }
   .navbar-top-links .dropdown-tasks,
   .navbar-top-links .dropdown-alerts {
     margin-left: auto;
   }
 }
-.dashboard .huge {
+.huge {
   font-size: 40px;
 }
-.dashboard .panel-blue {
+.panel-blue {
   border-color: #428bca;
 }
-.dashboard .panel-blue .panel-heading {
+.panel-blue .panel-heading {
   border-color: #428bca;
   color: white;
   background-color: #428bca;
   border-radius: 0px;
 }
-.dashboard .panel-blue a {
+.panel-blue a {
   color: #428bca;
 }
-.dashboard .panel-blue a:hover {
+.panel-blue a:hover {
   color: #2a6496;
 }
-.dashboard .panel-green {
+.panel-green {
   border-color: #5cb85c;
 }
-.dashboard .panel-green .panel-heading {
+.panel-green .panel-heading {
   border-color: #5cb85c;
   color: white;
   background-color: #5cb85c;
   border-radius: 0px;
 }
-.dashboard .panel-green a {
+.panel-green a {
   color: #5cb85c;
 }
-.dashboard .panel-green a:hover {
+.panel-green a:hover {
   color: #3d8b3d;
 }
-.dashboard .panel-red {
+.panel-red {
   border-color: #d9534f;
 }
-.dashboard .panel-red .panel-heading {
+.panel-red .panel-heading {
   border-color: #d9534f;
   color: white;
   background-color: #d9534f;
   border-radius: 0px;
 }
-.dashboard .panel-red a {
+.panel-red a {
   color: #d9534f;
 }
-.dashboard .panel-red a:hover {
+.panel-red a:hover {
   color: #b52b27;
 }
-.dashboard .panel-yellow {
+.panel-yellow {
   border-color: #f0ad4e;
 }
-.dashboard .panel-yellow .panel-heading {
+.panel-yellow .panel-heading {
   border-color: #f0ad4e;
   color: white;
   background-color: #f0ad4e;
   border-radius: 0px;
 }
-.dashboard .panel-yellow a {
+.panel-yellow a {
   color: #f0ad4e;
 }
-.dashboard .panel-yellow a:hover {
+.panel-yellow a:hover {
   color: #df8a13;
 }
-.dashboard .panel-brown {
+.panel-brown {
   border-color: #675144;
 }
-.dashboard .panel-brown .panel-heading {
+.panel-brown .panel-heading {
   border-color: #675144;
   color: white;
   background-color: #675144;
   border-radius: 0px;
 }
-.dashboard .panel-brown a {
+.panel-brown a {
   color: #675144;
 }
-.dashboard .panel-brown a:hover {
+.panel-brown a:hover {
   color: #392d26;
 }
-.dashboard .panel-orange {
+.panel-orange {
   border-color: #ff7900;
 }
-.dashboard .panel-orange .panel-heading {
+.panel-orange .panel-heading {
   border-color: #ff7900;
   color: white;
   background-color: #ff7900;
   border-radius: 0px;
 }
-.dashboard .panel-orange a {
+.panel-orange a {
   color: #ff7900;
 }
-.dashboard .panel-orange a:hover {
+.panel-orange a:hover {
   color: #b35500;
-}
-.panel {
-  border-radius: 0px;
 }
 .form-control {
   border: 1px solid #bbb;
@@ -475,9 +480,9 @@ section.autoposter .buttonSlide {
 }
 section.autoposter button,
 section.autoposter fa {
-  background-color: #d8d8d8 !important;
-  border-color: #d8d8d8 !important;
-  color: #656565 !important;
+  background-color: #d9d9d9 !important;
+  border-color: #d9d9d9 !important;
+  color: #555555 !important;
   border-radius: 0px;
   width: 100%;
   padding: 6px 0px;
@@ -498,12 +503,7 @@ section.autoposter.active .buttonSlide {
 }
 @media (min-width: 768px) and (max-width: 1200px) {
   section.autoposter h3 {
-    font-size: 22px;
-  }
-}
-@media (min-width: 525px) and (max-width: 768px) {
-  .fix500 {
-    width: 50%;
+    font-size: 21px;
   }
 }
 section.autoposter.Facebook .buttonSlide {
@@ -567,19 +567,19 @@ section.autoposter.Google.nonactive i {
   border-color: #d8d8d8;
 }
 section.autoposter.LinkedIn .buttonSlide {
-  box-shadow: inset 0 0 0 0 #007bb6;
+  box-shadow: inset 0 0 0 0 #0077b5;
 }
 section.autoposter.LinkedIn:hover i,
 section.autoposter.LinkedIn.active i,
 section.autoposter.LinkedIn:hover button,
 section.autoposter.LinkedIn.active button {
-  background: #007bb6;
+  background: #0077b5;
   color: white !important;
-  border-color: #007bb6;
+  border-color: #0077b5;
 }
 section.autoposter.LinkedIn:hover .buttonSlide,
 section.autoposter.LinkedIn.active .buttonSlide {
-  box-shadow: inset 0 -100px 0 0 #007bb6;
+  box-shadow: inset 0 -100px 0 0 #0077b5;
 }
 section.autoposter.LinkedIn.nonactive i {
   background: #d8d8d8;
