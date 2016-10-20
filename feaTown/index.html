@@ -10,6 +10,8 @@
   <link href="../css/bootstrap.min.css" rel="stylesheet">
   <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
   <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" type="text/css">
+
+  <script   src="https://code.jquery.com/jquery-3.1.1.js"   integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA="   crossorigin="anonymous"></script>
   <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -31,7 +33,7 @@
   <div class="row">
     <div  class="col-xs-12">
 
-      <div class="col-xs-6 col-sm-6 col-md-4 mobile500" ng-repeat="x in people1">
+      <div class="col-xs-6 col-sm-6 col-md-4 mobile500" ng-repeat="x in people1"  style="display:none;">
         <div class="innerContainer col-xs-12 " >
           <div>
             <div class="topHead c">{{x.Name1}}</div>
@@ -45,7 +47,7 @@
 <!-----CLEAR---->
 
 
-      <div class="col-xs-6 col-sm-6 col-md-4 mobile500" ng-repeat="y in people2">
+      <div class="col-xs-6 col-sm-6 col-md-4 mobile500" ng-repeat="y in people2"  style="display:none;">
         <div class="col-xs-12 whiteBack" >
           <div class="col-xs-12">
             <h4 class="topHead">{{y.Name2}} Town Info</h4>
@@ -96,7 +98,7 @@
       <!-----CLEAR---->
 
 
-      <div class="col-xs-6 col-sm-6 col-md-4 mobile500" ng-repeat="y in people2">
+      <div class="col-xs-6 col-sm-6 col-md-4 mobile500" ng-repeat="y in people2"  style="display:none;">
         <div class="col-xs-12 whiteBack" >
           <div class="col-xs-12">
             <h4 class="topHead text-center font21">{{y.Name2}} Info</h4>
@@ -153,7 +155,7 @@
 
 
 
-      <div class="col-xs-12 col-sm-6 col-md-4" ng-repeat="z in people3">
+      <div class="col-xs-12 col-sm-6 col-md-4" ng-repeat="z in people3" style="display:none;">
         <div class="col-xs-12 whiteBack">
           <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d94468.47117585412!2d-71.87848173695983!3d42.27554066100889!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89e406585a2a8b0d%3A0x9e137dd87fca4d6d!2sWorcester%2C+MA!5e0!3m2!1sen!2sus!4v1471294875761" width="100%" height="250" frameborder="0" scrolling="no" marginheight="0"></iframe>
           <div class="col-xs-12">
@@ -172,49 +174,51 @@
       <div class="clear"></div>
       <!-----CLEAR---->
 
-      <div class="col-xs-12 col-sm-6 col-md-4" ng-repeat="z in people3">
+      <div class="col-xs-12 col-sm-6 col-md-4 townBox" ng-repeat="z in people3">
         <div class="col-xs-12 whiteBack">
           <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d94468.47117585412!2d-71.87848173695983!3d42.27554066100889!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89e406585a2a8b0d%3A0x9e137dd87fca4d6d!2sWorcester%2C+MA!5e0!3m2!1sen!2sus!4v1471294875761" width="100%" height="250" frameborder="0" scrolling="no" marginheight="0"></iframe>
           <div class="col-xs-12 text-center">
-            <h4 class="topHead font16">{{z.Name3}}, MA Town Info</h4>
+            <h4 class="topHead font16 townHeader">{{z.Name3}}, MA Town Info</h4>
           </div>
 
-          <div class="col-xs-12 text-center">
+          <div class="col-xs-12 text-center townPar">
             <p>Find town information about {{z.Name3}}, MA including homes for sale in {{z.Name3}}. </p>
           </div>
 
           <div class="col-xs-12 text-center">
             <a href="" target="_blank" class="btn btn-xl readMore">Read More</a>
           </div>
-
-
         </div>
       </div>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     </div>
   </div>
-
 </div>
 
+
+<script>
+
+$(document).ready(function()
+  {
+      if (screen.width > 768) {
+        var maxHeightHeader = Math.max.apply(null, $(".townHeader").map(function ()
+        {
+            return $(this).height();
+        }).get());
+
+        $(".townHeader").css('height', maxHeightHeader );
+
+        var maxHeightPar = Math.max.apply(null, $(".townPar").map(function ()
+        {
+            return $(this).height();
+        }).get());
+
+        $(".townPar").css('height',maxHeightPar );
+      }
+  }
+)
+
+</script>
 
 
 
@@ -260,7 +264,7 @@ app.controller("brianController", function($scope) {
       "Picture3" : "http://farm8.staticflickr.com/7135/13563537334_2be3ea40bf_b.jpg"
     },
     {
-      "Name3" : "Paxton",
+      "Name3" : "Ponte Vedra Beach, FL Town Info",
       "Picture3" : "http://farm8.staticflickr.com/7135/13563537334_2be3ea40bf_b.jpg"
     },
     {
@@ -270,6 +274,9 @@ app.controller("brianController", function($scope) {
 
   ]
 });
+
+
+
 </script>
 
 </body>
