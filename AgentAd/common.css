@@ -1,3 +1,1 @@
-body{
-  color: red;
-}
+body{margin:0;font-family:'Open Sans',sans-serif;font-size:14px}.flexbox{display:-ms-flexbox;display:flex}.flex{-ms-flex:1;flex:1}.vertCenter{-ms-flex-align:center;align-items:center}.floatRight{float:right}.floatLeft{float:left}.marginLeft{margin-left:15px}.marginRight{margin-right:15px}@media (max-width:768px){.desktopOnly{display:none}}header{background-color:#00695C}header .container{width:90%;margin:0 5%}header .container .agentContainer img.agentImage{width:50px;border-radius:100%;margin-top:5px}header .container .agentContainer .agentDescContainer{color:white}header .container .agentContactContainer a button{border:#00CC66;background-color:#00CC66;padding:8px 25px;border-radius:15px;color:white}

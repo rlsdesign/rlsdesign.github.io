@@ -1,0 +1,43 @@
+// "out": "common.css", "compress": false, "autoprefix": "last 2 versions"
+body{margin: 0px; font-family: 'Open Sans',sans-serif;font-size: 14px;}
+.flexbox{display: flex;}
+.flex{flex: 1;}
+.vertCenter{align-items: center;}
+.floatRight{float: right;}
+.floatLeft{float:left;}
+.marginLeft{margin-left: 15px;}
+.marginRight{margin-right: 15px;}
+.desktopOnly{
+  @media(max-width: 768px){
+    display: none;
+  }
+}
+
+header{
+  background-color: #00695C;
+  .container{
+    width: 90%;
+    margin: 0% 5%;
+    .agentContainer{
+      img.agentImage{
+        width: 50px;
+        border-radius: 100%;
+        margin-top: 5px;
+      }
+      .agentDescContainer{
+        color: white;
+      }
+    }
+    .agentContactContainer{
+      a{
+        button{
+          border: #00CC66;
+          background-color: #00CC66;
+          padding: 8px 25px;
+          border-radius: 15px;
+          color: white;
+        }
+      }
+    }
+  }
+}
