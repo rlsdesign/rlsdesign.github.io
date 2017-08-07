@@ -49,6 +49,13 @@ header{
 footer{
   background-color: #666666;
   color: #ffffff;
+  a{
+    color: #ffffff;
+    text-decoration: none;
+  }
+  a:hover{
+    color: darken(rgb(255, 255, 255), 20%);
+  }
   .container .footerTop{
     width: 90%;
     margin: 0% 5%;
@@ -61,15 +68,22 @@ footer{
       margin: 0 auto 0 auto;
       align-items: center;
       text-align: center;
-      padding: 25px 0px;
+      padding: 35px 0px;
+      .agent-name{
+        font-size: 18.5px;
+        font-weight: bold;
+      }
     }
     .footerSection-1{
       flex: 1;
     }
   .footerBottom .flex{
     background-color:#515151 ;
+    color: #ffffff;
     justify-content: center;
     text-align: center;
+    padding: 15px 0px;
+    font-size: 12px;
   }
   }
 
