@@ -47,6 +47,9 @@ header{
 
 
 footer{
+  .container.flex.flexbox.footerTop{
+  flex-wrap: wrap;
+}
   background-color: #666666;
   color: #ffffff;
   a{
@@ -73,19 +76,27 @@ footer{
         font-size: 18.5px;
         font-weight: bold;
       }
+      .flex.footerSection{
+        @media(max-width: 900px){
+          flex-basis: 50%;
+          padding-bottom: 20px;
+        }
+        @media(max-width: 600px){
+          flex-basis: 100%;
+          padding-bottom: 20px;
+        }
+      }
     }
-    .footerSection-1{
-      flex: 1;
-    }
-  .footerBottom .flex{
-    background-color:#515151 ;
-    color: #ffffff;
-    justify-content: center;
-    text-align: center;
-    padding: 15px 0px;
-    font-size: 12px;
-  }
-  }
 
 
-  .test{color: black;}
+  }
+    .footerBottom .flex{
+      background-color:#515151 ;
+      color: #ffffff;
+      justify-content: center;
+      text-align: center;
+      padding: 15px 0px;
+      font-size: 12px;
+    }
+
+
